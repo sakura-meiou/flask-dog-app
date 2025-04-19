@@ -1,0 +1,12 @@
+{
+  "pochi": {
+    "name": "pochi",
+    "breed": "cshiba",
+    "age": 21
+  },
+  "kuro": {
+    "name": "kuro",
+    "breed": "tosa",
+    "age": 12
+  }
+}

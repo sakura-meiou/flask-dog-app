@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>犬管理アプリ</title>
+</head>
+<body>
+    <h1>🐶 犬の一覧</h1>
+    <ul>
+        {% for name, dog in dogs.items() %}
+            <li>{{ dog.name }}（{{ dog.breed }}・{{ dog.age }}歳）</li>
+        {% endfor %}
+    </ul>
+
+    <h2>新しい犬を追加</h2>
+    <form action="/add" method="post">
+        名前: <input type="text" name="name"><br>
+        犬種: <input type="text" name="breed"><br>
+        年齢: <input type="text" name="age"><br>
+        <button type="submit">追加する</button>
+    </form>
+</body>
+</html>
